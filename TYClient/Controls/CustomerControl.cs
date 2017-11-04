@@ -89,6 +89,9 @@ namespace TY.SPIMS.Client.Controls
 
         private void CustomerControl_Load(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+                DeleteButton.Visible = false;
+
             LoadCustomers();
             CustomerTextbox.Focus();
         }
@@ -181,6 +184,12 @@ namespace TY.SPIMS.Client.Controls
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+            {
+                ClientHelper.ShowErrorMessage("You are not authorized to delete this record.");
+                return;
+            }
+
             if (ClientHelper.ShowConfirmMessage("Are you sure you want to delete this customer?") == DialogResult.Yes)
             {
                 if (dataGridView1.SelectedRows.Count > 0)

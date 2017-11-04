@@ -32,6 +32,9 @@ namespace TY.SPIMS.Client.Controls
         #region Load
         private void PurchaseControl_Load(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+                DeleteButton.Visible = false;
+
             LoadCustomers();
             LoadAmountTypes();
             LoadPurchaseTypes();
@@ -341,6 +344,12 @@ namespace TY.SPIMS.Client.Controls
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+            {
+                ClientHelper.ShowErrorMessage("You are not authorized to delete this record.");
+                return;
+            }
+
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 int id = (int)dataGridView1.SelectedRows[0].Cells[PurchaseIdColumn.Name].Value;

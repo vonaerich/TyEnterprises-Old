@@ -33,6 +33,9 @@ namespace TY.SPIMS.Client.Controls
 
         private void PurchasePaymentControl_Load(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+                DeleteButton.Visible = false;
+
             LoadAmountTypes();
             LoadCustomers();
             CustomerDropdown.Focus();
@@ -308,6 +311,12 @@ namespace TY.SPIMS.Client.Controls
         {
             if (dataGridView1.SelectedRows.Count < 1)
             {
+                return;
+            }
+
+            if (!UserInfo.IsAdmin)
+            {
+                ClientHelper.ShowErrorMessage("You are not authorized to delete this record.");
                 return;
             }
 

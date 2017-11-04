@@ -30,8 +30,11 @@ namespace TY.SPIMS.Controllers
         {
             try
             {
+                var computerName = Environment.MachineName;
+                var actionToSave = string.Format("From {0}: {1}", computerName, action);
+
                 ActionLog log = new ActionLog() { 
-                    Action = action,
+                    Action = actionToSave,
                     ActionDate = DateTime.Now,
                     ActionUserId = userId
                 };

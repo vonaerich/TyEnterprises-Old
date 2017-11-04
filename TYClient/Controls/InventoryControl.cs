@@ -93,6 +93,12 @@ namespace TY.SPIMS.Client.Controls
 
         private void InventoryControl_Load(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+            {
+                DeleteButton.Visible = false;
+                DeleteItem.Visible = false;
+            }
+
             LoadBrands();
             LoadAutoParts();
             CheckUserAccess();
@@ -343,6 +349,12 @@ namespace TY.SPIMS.Client.Controls
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+            {
+                ClientHelper.ShowErrorMessage("You are not authorized to delete this record.");
+                return;
+            }
+
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dataGridView1.SelectedRows[0];
@@ -393,6 +405,12 @@ namespace TY.SPIMS.Client.Controls
 
         private void DeleteItem_Click(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+            {
+                ClientHelper.ShowErrorMessage("You are not authorized to delete this record.");
+                return;
+            }
+
             if (dataGridView2.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dataGridView2.SelectedRows[0];

@@ -36,9 +36,6 @@ namespace TY.SPIMS.Client.ActionLog
             this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.dataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.actionDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.actionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.actionDisplayModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.FilterButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -46,9 +43,13 @@ namespace TY.SPIMS.Client.ActionLog
             this.DateFromPicker = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.actionDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.actionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
             this.kryptonHeaderGroup1.Panel.SuspendLayout();
             this.kryptonHeaderGroup1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,7 +69,7 @@ namespace TY.SPIMS.Client.ActionLog
             this.kryptonPanel.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel.Name = "kryptonPanel";
             this.kryptonPanel.Padding = new System.Windows.Forms.Padding(10);
-            this.kryptonPanel.Size = new System.Drawing.Size(584, 485);
+            this.kryptonPanel.Size = new System.Drawing.Size(777, 520);
             this.kryptonPanel.TabIndex = 0;
             // 
             // kryptonHeaderGroup1
@@ -82,7 +83,7 @@ namespace TY.SPIMS.Client.ActionLog
             // 
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.dataGridView1);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonPanel1);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(564, 465);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(757, 500);
             this.kryptonHeaderGroup1.TabIndex = 0;
             this.kryptonHeaderGroup1.ValuesPrimary.Heading = "View Action Log";
             this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
@@ -110,33 +111,8 @@ namespace TY.SPIMS.Client.ActionLog
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 10F);
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(562, 396);
+            this.dataGridView1.Size = new System.Drawing.Size(755, 431);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // actionDateDataGridViewTextBoxColumn
-            // 
-            this.actionDateDataGridViewTextBoxColumn.DataPropertyName = "ActionDate";
-            dataGridViewCellStyle2.Format = "d";
-            this.actionDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.actionDateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.actionDateDataGridViewTextBoxColumn.Name = "actionDateDataGridViewTextBoxColumn";
-            this.actionDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // actionDataGridViewTextBoxColumn
-            // 
-            this.actionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.actionDataGridViewTextBoxColumn.DataPropertyName = "Action";
-            this.actionDataGridViewTextBoxColumn.HeaderText = "Action";
-            this.actionDataGridViewTextBoxColumn.Name = "actionDataGridViewTextBoxColumn";
-            this.actionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // userDataGridViewTextBoxColumn
-            // 
-            this.userDataGridViewTextBoxColumn.DataPropertyName = "User";
-            this.userDataGridViewTextBoxColumn.HeaderText = "User";
-            this.userDataGridViewTextBoxColumn.Name = "userDataGridViewTextBoxColumn";
-            this.userDataGridViewTextBoxColumn.ReadOnly = true;
-            this.userDataGridViewTextBoxColumn.Width = 150;
             // 
             // actionDisplayModelBindingSource
             // 
@@ -154,7 +130,7 @@ namespace TY.SPIMS.Client.ActionLog
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.kryptonPanel1.Size = new System.Drawing.Size(562, 35);
+            this.kryptonPanel1.Size = new System.Drawing.Size(755, 35);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // FilterButton
@@ -200,12 +176,39 @@ namespace TY.SPIMS.Client.ActionLog
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Date From";
             // 
+            // actionDateDataGridViewTextBoxColumn
+            // 
+            this.actionDateDataGridViewTextBoxColumn.DataPropertyName = "ActionDate";
+            dataGridViewCellStyle2.Format = "G";
+            dataGridViewCellStyle2.NullValue = null;
+            this.actionDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.actionDateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.actionDateDataGridViewTextBoxColumn.Name = "actionDateDataGridViewTextBoxColumn";
+            this.actionDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.actionDateDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // actionDataGridViewTextBoxColumn
+            // 
+            this.actionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.actionDataGridViewTextBoxColumn.DataPropertyName = "Action";
+            this.actionDataGridViewTextBoxColumn.HeaderText = "Action";
+            this.actionDataGridViewTextBoxColumn.Name = "actionDataGridViewTextBoxColumn";
+            this.actionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // userDataGridViewTextBoxColumn
+            // 
+            this.userDataGridViewTextBoxColumn.DataPropertyName = "User";
+            this.userDataGridViewTextBoxColumn.HeaderText = "User";
+            this.userDataGridViewTextBoxColumn.Name = "userDataGridViewTextBoxColumn";
+            this.userDataGridViewTextBoxColumn.ReadOnly = true;
+            this.userDataGridViewTextBoxColumn.Width = 150;
+            // 
             // ActionLogForm
             // 
             this.AcceptButton = this.FilterButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 485);
+            this.ClientSize = new System.Drawing.Size(777, 520);
             this.Controls.Add(this.kryptonPanel);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -215,6 +218,7 @@ namespace TY.SPIMS.Client.ActionLog
             this.Load += new System.EventHandler(this.ActionLogForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.kryptonPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
             this.kryptonHeaderGroup1.Panel.ResumeLayout(false);
             this.kryptonHeaderGroup1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).EndInit();
@@ -234,9 +238,6 @@ namespace TY.SPIMS.Client.ActionLog
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn actionDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn actionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource actionDisplayModelBindingSource;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton FilterButton;
@@ -244,6 +245,9 @@ namespace TY.SPIMS.Client.ActionLog
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker DateFromPicker;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn actionDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn actionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userDataGridViewTextBoxColumn;
     }
 }
 

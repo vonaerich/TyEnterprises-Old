@@ -23,6 +23,9 @@ namespace TY.SPIMS.Client.Controls
 
         private void PurchaseCounterControl_Load(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+                DeleteButton.Visible = false;
+            
             LoadSuppliers();
             SupplierDropdown.Focus();
         }
@@ -129,6 +132,12 @@ namespace TY.SPIMS.Client.Controls
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+            {
+                ClientHelper.ShowErrorMessage("You are not authorized to delete this record.");
+                return;
+            }
+
             if (ClientHelper.ShowConfirmMessage("Are you sure you want to delete this counter?") == DialogResult.Yes)
             {
                 DataGridViewRow row = dataGridView1.SelectedRows[0];

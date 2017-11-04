@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonSplitContainer1 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
             this.kryptonSplitContainer2 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
@@ -94,9 +94,10 @@
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel9 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.PONumberTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.SupplierTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.PurchaseDateTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.TotalAmountTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.PurchaseDateTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.SupplierTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
@@ -156,7 +157,6 @@
             this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.TotalSalesTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel14 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.TotalAmountTextbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1)).BeginInit();
@@ -250,7 +250,7 @@
             // 
             this.kryptonSplitContainer2.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonSplitContainer2.Location = new System.Drawing.Point(0, 111);
+            this.kryptonSplitContainer2.Location = new System.Drawing.Point(0, 113);
             this.kryptonSplitContainer2.Name = "kryptonSplitContainer2";
             this.kryptonSplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -261,8 +261,8 @@
             // kryptonSplitContainer2.Panel2
             // 
             this.kryptonSplitContainer2.Panel2.Controls.Add(this.kryptonHeaderGroup2);
-            this.kryptonSplitContainer2.Size = new System.Drawing.Size(957, 526);
-            this.kryptonSplitContainer2.SplitterDistance = 298;
+            this.kryptonSplitContainer2.Size = new System.Drawing.Size(957, 524);
+            this.kryptonSplitContainer2.SplitterDistance = 296;
             this.kryptonSplitContainer2.TabIndex = 4;
             // 
             // kryptonHeaderGroup4
@@ -278,7 +278,7 @@
             // kryptonHeaderGroup4.Panel
             // 
             this.kryptonHeaderGroup4.Panel.Controls.Add(this.dataGridView1);
-            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(957, 298);
+            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(957, 296);
             this.kryptonHeaderGroup4.TabIndex = 8;
             this.kryptonHeaderGroup4.ValuesPrimary.Heading = "Purchase List";
             this.kryptonHeaderGroup4.ValuesPrimary.Image = null;
@@ -301,8 +301,8 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
@@ -332,12 +332,12 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(955, 245);
+            this.dataGridView1.Size = new System.Drawing.Size(955, 239);
             this.dataGridView1.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.dataGridView1.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.TabIndex = 4;
@@ -381,9 +381,9 @@
             // PurchaseDateColumn
             // 
             this.PurchaseDateColumn.DataPropertyName = "Date";
-            dataGridViewCellStyle23.Format = "d";
-            dataGridViewCellStyle23.NullValue = null;
-            this.PurchaseDateColumn.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle2.Format = "d";
+            dataGridViewCellStyle2.NullValue = null;
+            this.PurchaseDateColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.PurchaseDateColumn.HeaderText = "Date";
             this.PurchaseDateColumn.Name = "PurchaseDateColumn";
             this.PurchaseDateColumn.ReadOnly = true;
@@ -417,9 +417,9 @@
             // TotalAmountColumn
             // 
             this.TotalAmountColumn.DataPropertyName = "TotalAmount";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle24.Format = "Php #,##0.00";
-            this.TotalAmountColumn.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "Php #,##0.00";
+            this.TotalAmountColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.TotalAmountColumn.HeaderText = "Total Amount";
             this.TotalAmountColumn.Name = "TotalAmountColumn";
             this.TotalAmountColumn.ReadOnly = true;
@@ -499,8 +499,8 @@
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
@@ -524,12 +524,12 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView2.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(955, 130);
+            this.dataGridView2.Size = new System.Drawing.Size(955, 128);
             this.dataGridView2.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.dataGridView2.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView2.TabIndex = 7;
@@ -555,8 +555,8 @@
             // quantityDataGridViewTextBoxColumn
             // 
             this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.quantityDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.quantityDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
             this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
@@ -574,8 +574,8 @@
             // 
             this.autoPartNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.autoPartNameDataGridViewTextBoxColumn.DataPropertyName = "AutoPartName";
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.autoPartNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.autoPartNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
             this.autoPartNameDataGridViewTextBoxColumn.HeaderText = "Auto Part";
             this.autoPartNameDataGridViewTextBoxColumn.MinimumWidth = 150;
             this.autoPartNameDataGridViewTextBoxColumn.Name = "autoPartNameDataGridViewTextBoxColumn";
@@ -584,9 +584,9 @@
             // unitPriceDataGridViewTextBoxColumn
             // 
             this.unitPriceDataGridViewTextBoxColumn.DataPropertyName = "UnitPrice";
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle29.Format = "Php #,##0.00";
-            this.unitPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "Php #,##0.00";
+            this.unitPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
             this.unitPriceDataGridViewTextBoxColumn.HeaderText = "Unit Price";
             this.unitPriceDataGridViewTextBoxColumn.Name = "unitPriceDataGridViewTextBoxColumn";
             this.unitPriceDataGridViewTextBoxColumn.ReadOnly = true;
@@ -595,9 +595,9 @@
             // TotalDiscount
             // 
             this.TotalDiscount.DataPropertyName = "TotalDiscount";
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle30.Format = "Php #,##0.00";
-            this.TotalDiscount.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "Php #,##0.00";
+            this.TotalDiscount.DefaultCellStyle = dataGridViewCellStyle9;
             this.TotalDiscount.HeaderText = "Discount";
             this.TotalDiscount.Name = "TotalDiscount";
             this.TotalDiscount.ReadOnly = true;
@@ -606,9 +606,9 @@
             // DiscountedPrice
             // 
             this.DiscountedPrice.DataPropertyName = "DiscountedPrice";
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle31.Format = "Php #,##0.00";
-            this.DiscountedPrice.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle10.Format = "Php #,##0.00";
+            this.DiscountedPrice.DefaultCellStyle = dataGridViewCellStyle10;
             this.DiscountedPrice.HeaderText = "Discounted Price";
             this.DiscountedPrice.Name = "DiscountedPrice";
             this.DiscountedPrice.ReadOnly = true;
@@ -617,9 +617,9 @@
             // totalAmountDataGridViewTextBoxColumn2
             // 
             this.totalAmountDataGridViewTextBoxColumn2.DataPropertyName = "TotalAmount";
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle32.Format = "Php #,##0.00";
-            this.totalAmountDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "Php #,##0.00";
+            this.totalAmountDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle11;
             this.totalAmountDataGridViewTextBoxColumn2.HeaderText = "Total Amount";
             this.totalAmountDataGridViewTextBoxColumn2.Name = "totalAmountDataGridViewTextBoxColumn2";
             this.totalAmountDataGridViewTextBoxColumn2.ReadOnly = true;
@@ -748,24 +748,6 @@
             this.PONumberTextbox.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PONumberTextbox.TabIndex = 5;
             // 
-            // SupplierTextbox
-            // 
-            this.SupplierTextbox.Location = new System.Drawing.Point(98, 33);
-            this.SupplierTextbox.Name = "SupplierTextbox";
-            this.SupplierTextbox.Size = new System.Drawing.Size(160, 24);
-            this.SupplierTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.SupplierTextbox.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupplierTextbox.TabIndex = 6;
-            // 
-            // PurchaseDateTextbox
-            // 
-            this.PurchaseDateTextbox.Location = new System.Drawing.Point(315, 33);
-            this.PurchaseDateTextbox.Name = "PurchaseDateTextbox";
-            this.PurchaseDateTextbox.Size = new System.Drawing.Size(160, 24);
-            this.PurchaseDateTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.PurchaseDateTextbox.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PurchaseDateTextbox.TabIndex = 8;
-            // 
             // kryptonLabel10
             // 
             this.kryptonLabel10.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalPanel;
@@ -776,12 +758,40 @@
             this.kryptonLabel10.TabIndex = 4;
             this.kryptonLabel10.Values.Text = "Total Amount";
             // 
+            // TotalAmountTextbox
+            // 
+            this.TotalAmountTextbox.Location = new System.Drawing.Point(611, 33);
+            this.TotalAmountTextbox.Name = "TotalAmountTextbox";
+            this.TotalAmountTextbox.Size = new System.Drawing.Size(160, 24);
+            this.TotalAmountTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.TotalAmountTextbox.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalAmountTextbox.TabIndex = 12;
+            this.TotalAmountTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PurchaseDateTextbox
+            // 
+            this.PurchaseDateTextbox.Location = new System.Drawing.Point(315, 33);
+            this.PurchaseDateTextbox.Name = "PurchaseDateTextbox";
+            this.PurchaseDateTextbox.Size = new System.Drawing.Size(160, 24);
+            this.PurchaseDateTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.PurchaseDateTextbox.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PurchaseDateTextbox.TabIndex = 8;
+            // 
+            // SupplierTextbox
+            // 
+            this.SupplierTextbox.Location = new System.Drawing.Point(98, 33);
+            this.SupplierTextbox.Name = "SupplierTextbox";
+            this.SupplierTextbox.Size = new System.Drawing.Size(160, 24);
+            this.SupplierTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.SupplierTextbox.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SupplierTextbox.TabIndex = 6;
+            // 
             // kryptonDataGridView1
             // 
             this.kryptonDataGridView1.AllowUserToAddRows = false;
             this.kryptonDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.kryptonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.kryptonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.kryptonDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.kryptonDataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -794,14 +804,14 @@
             this.kryptonDataGridView1.ReadOnly = true;
             this.kryptonDataGridView1.RowHeadersVisible = false;
             this.kryptonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(955, 200);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(955, 198);
             this.kryptonDataGridView1.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 106);
+            this.panel1.Location = new System.Drawing.Point(0, 108);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(957, 5);
             this.panel1.TabIndex = 3;
@@ -843,7 +853,7 @@
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonLabel2);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.AllDateRB);
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.flowLayoutPanel5);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(957, 106);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(957, 108);
             this.kryptonHeaderGroup1.TabIndex = 2;
             this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Find";
             // 
@@ -1164,13 +1174,13 @@
             // 
             this.kryptonHeaderGroup5.AutoSize = true;
             this.kryptonHeaderGroup5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonHeaderGroup5.Location = new System.Drawing.Point(0, 66);
+            this.kryptonHeaderGroup5.Location = new System.Drawing.Point(0, 68);
             this.kryptonHeaderGroup5.Name = "kryptonHeaderGroup5";
             // 
             // kryptonHeaderGroup5.Panel
             // 
             this.kryptonHeaderGroup5.Panel.Controls.Add(this.kryptonDataGridView3);
-            this.kryptonHeaderGroup5.Size = new System.Drawing.Size(273, 213);
+            this.kryptonHeaderGroup5.Size = new System.Drawing.Size(273, 211);
             this.kryptonHeaderGroup5.TabIndex = 3;
             this.kryptonHeaderGroup5.ValuesPrimary.Heading = "Payment Details";
             this.kryptonHeaderGroup5.ValuesPrimary.Image = null;
@@ -1181,8 +1191,8 @@
             this.kryptonDataGridView3.AllowUserToAddRows = false;
             this.kryptonDataGridView3.AllowUserToDeleteRows = false;
             this.kryptonDataGridView3.AllowUserToResizeRows = false;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.kryptonDataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.kryptonDataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
             this.kryptonDataGridView3.AutoGenerateColumns = false;
             this.kryptonDataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.kryptonDataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
@@ -1200,12 +1210,12 @@
             this.kryptonDataGridView3.Name = "kryptonDataGridView3";
             this.kryptonDataGridView3.ReadOnly = true;
             this.kryptonDataGridView3.RowHeadersVisible = false;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.kryptonDataGridView3.RowsDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.kryptonDataGridView3.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.kryptonDataGridView3.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDataGridView3.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.kryptonDataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kryptonDataGridView3.Size = new System.Drawing.Size(271, 160);
+            this.kryptonDataGridView3.Size = new System.Drawing.Size(271, 154);
             this.kryptonDataGridView3.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonDataGridView3.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDataGridView3.TabIndex = 10;
@@ -1221,8 +1231,8 @@
             // dateDataGridViewTextBoxColumn
             // 
             this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            dataGridViewCellStyle36.Format = "d";
-            this.dateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle15.Format = "d";
+            this.dateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
             this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             this.dateDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1231,9 +1241,9 @@
             // amountDataGridViewTextBoxColumn
             // 
             this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle37.Format = "Php #,##0.00";
-            this.amountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle16.Format = "Php #,##0.00";
+            this.amountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle16;
             this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
             this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
             this.amountDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1264,8 +1274,8 @@
             this.kryptonDataGridView2.AllowUserToAddRows = false;
             this.kryptonDataGridView2.AllowUserToDeleteRows = false;
             this.kryptonDataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.kryptonDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.kryptonDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle18;
             this.kryptonDataGridView2.AutoGenerateColumns = false;
             this.kryptonDataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.kryptonDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1288,12 +1298,12 @@
             this.kryptonDataGridView2.Name = "kryptonDataGridView2";
             this.kryptonDataGridView2.ReadOnly = true;
             this.kryptonDataGridView2.RowHeadersVisible = false;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.kryptonDataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.kryptonDataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.kryptonDataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDataGridView2.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.kryptonDataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kryptonDataGridView2.Size = new System.Drawing.Size(271, 240);
+            this.kryptonDataGridView2.Size = new System.Drawing.Size(271, 236);
             this.kryptonDataGridView2.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.kryptonDataGridView2.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDataGridView2.TabIndex = 8;
@@ -1341,8 +1351,8 @@
             // quantityDataGridViewTextBoxColumn1
             // 
             this.quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.quantityDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.quantityDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle19;
             this.quantityDataGridViewTextBoxColumn1.HeaderText = "Qty";
             this.quantityDataGridViewTextBoxColumn1.MinimumWidth = 70;
             this.quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
@@ -1353,8 +1363,8 @@
             // 
             this.autoPartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.autoPartDataGridViewTextBoxColumn.DataPropertyName = "AutoPart";
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.autoPartDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.autoPartDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
             this.autoPartDataGridViewTextBoxColumn.HeaderText = "Auto Part";
             this.autoPartDataGridViewTextBoxColumn.MinimumWidth = 150;
             this.autoPartDataGridViewTextBoxColumn.Name = "autoPartDataGridViewTextBoxColumn";
@@ -1444,7 +1454,7 @@
             this.kryptonHeaderGroup3.Panel.Controls.Add(this.TotalSalesTextbox);
             this.kryptonHeaderGroup3.Panel.Controls.Add(this.kryptonLabel14);
             this.kryptonHeaderGroup3.Panel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(273, 66);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(273, 68);
             this.kryptonHeaderGroup3.TabIndex = 0;
             this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Totals";
             this.kryptonHeaderGroup3.ValuesPrimary.Image = null;
@@ -1469,16 +1479,6 @@
             this.kryptonLabel14.StateCommon.ShortText.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel14.TabIndex = 0;
             this.kryptonLabel14.Values.Text = "Total Purchases";
-            // 
-            // TotalAmountTextbox
-            // 
-            this.TotalAmountTextbox.Location = new System.Drawing.Point(611, 33);
-            this.TotalAmountTextbox.Name = "TotalAmountTextbox";
-            this.TotalAmountTextbox.Size = new System.Drawing.Size(160, 24);
-            this.TotalAmountTextbox.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.TotalAmountTextbox.StateCommon.Content.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalAmountTextbox.TabIndex = 12;
-            this.TotalAmountTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // PurchaseControl
             // 

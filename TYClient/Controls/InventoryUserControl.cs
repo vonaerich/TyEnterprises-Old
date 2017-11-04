@@ -90,6 +90,9 @@ namespace TY.SPIMS.Client.Controls
 
         private void InventoryUserControl_Load(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+                DeleteButton.Visible = false;
+
             LoadUsers();
         }
 
@@ -182,6 +185,12 @@ namespace TY.SPIMS.Client.Controls
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            if (!UserInfo.IsAdmin)
+            {
+                ClientHelper.ShowErrorMessage("You are not authorized to delete this record.");
+                return;
+            }
+
             if (ClientHelper.ShowConfirmMessage("Are you sure you want to delete this user?") == DialogResult.Yes)
             {
                 if (dataGridView1.SelectedRows.Count > 0)
