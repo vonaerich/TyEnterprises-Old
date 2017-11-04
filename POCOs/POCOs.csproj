@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE03E0A2-9F44-44D8-AB4A-F94CA85DED49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.SPIMS.POCOs</RootNamespace>
+    <AssemblyName>TY.SPIMS.POCOs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionDisplayModel.cs" />
+    <Compile Include="BaseClasses\FilterModelBase.cs" />
+    <Compile Include="BrandColumnModel.cs" />
+    <Compile Include="BrandColumnNames.cs" />
+    <Compile Include="BrandDisplayModel.cs" />
+    <Compile Include="CheckColumnModel.cs" />
+    <Compile Include="CheckColumnNames.cs" />
+    <Compile Include="CheckDisplayModel.cs" />
+    <Compile Include="CheckFilterModel.cs" />
+    <Compile Include="PurchaseCounterDisplayModel.cs" />
+    <Compile Include="PurchaseCounterItemModel.cs" />
+    <Compile Include="CreditDetailModel.cs" />
+    <Compile Include="CustomerColumnModel.cs" />
+    <Compile Include="CustomerColumnNames.cs" />
+    <Compile Include="CustomerCreditColumnModel.cs" />
+    <Compile Include="CustomerCreditColumnNames.cs" />
+    <Compile Include="CustomerCreditDisplayModel.cs" />
+    <Compile Include="CustomerCreditFilterModel.cs" />
+    <Compile Include="CustomerDebitColumnModel.cs" />
+    <Compile Include="CustomerDebitColumnNames.cs" />
+    <Compile Include="CustomerDebitDisplayModel.cs" />
+    <Compile Include="CustomerDebitFilterModel.cs" />
+    <Compile Include="CustomerDisplayModel.cs" />
+    <Compile Include="DebitDetailModel.cs" />
+    <Compile Include="InventoryUserColumnModel.cs" />
+    <Compile Include="InventoryUserColumnNames.cs" />
+    <Compile Include="InventoryUserDisplayModel.cs" />
+    <Compile Include="PaymentCreditModel.cs" />
+    <Compile Include="PaymentDebitModel.cs" />
+    <Compile Include="PaymentDetailColumnModel.cs" />
+    <Compile Include="PaymentDetailColumnNames.cs" />
+    <Compile Include="PaymentDetailDisplayModel.cs" />
+    <Compile Include="PaymentDetailFilterModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseColumnModel.cs" />
+    <Compile Include="PurchaseColumnNames.cs" />
+    <Compile Include="PurchaseDetailViewModel.cs" />
+    <Compile Include="PurchaseDisplayModel.cs" />
+    <Compile Include="PurchaseFilterModel.cs" />
+    <Compile Include="PurchasePaymentDisplayModel.cs" />
+    <Compile Include="PurchaseReturnColumnModel.cs" />
+    <Compile Include="PurchaseReturnColumnNames.cs" />
+    <Compile Include="PurchaseReturnDetailModel.cs" />
+    <Compile Include="PurchaseReturnDisplayModel.cs" />
+    <Compile Include="PurchaseReturnFilterModel.cs" />
+    <Compile Include="SaleColumnModel.cs" />
+    <Compile Include="SaleColumnNames.cs" />
+    <Compile Include="SaleDisplayModel.cs" />
+    <Compile Include="SaleFilterModel.cs" />
+    <Compile Include="SalesCounterDisplayModel.cs" />
+    <Compile Include="CounterFilterModel.cs" />
+    <Compile Include="SalesCounterItemModel.cs" />
+    <Compile Include="SalesDetailViewModel.cs" />
+    <Compile Include="SalesPaymentDisplayModel.cs" />
+    <Compile Include="SalesReturnColumnModel.cs" />
+    <Compile Include="SalesReturnColumnNames.cs" />
+    <Compile Include="SalesReturnDetailModel.cs" />
+    <Compile Include="SalesReturnDisplayModel.cs" />
+    <Compile Include="SalesReturnFilterModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{AD5D785C-1699-458C-AE98-77D82C141519}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\PurchaseCounterDisplayModel.datasource" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

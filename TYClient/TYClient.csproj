@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2190A0D-2FFD-4C94-B60D-FD3E0D21F77A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.SPIMS.Client</RootNamespace>
+    <AssemblyName>TY.SPIMS.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Von\Desktop\Test2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7B7ABE681A30BF404813CB33E9EB3FD8710C35CD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TYClient_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.3.5.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Component Factory\Krypton Toolkit 4.3.2\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector">
+      <HintPath>..\packages\SimpleInjector.3.1.2\lib\net40-client\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Extensions.LifetimeScoping">
+      <HintPath>..\packages\SimpleInjector.Extensions.LifetimeScoping.3.1.2\lib\net40-client\SimpleInjector.Extensions.LifetimeScoping.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionLog\ActionLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActionLog\ActionLogForm.Designer.cs">
+      <DependentUpon>ActionLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\ApprovalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approval\ApprovalForm.Designer.cs">
+      <DependentUpon>ApprovalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brands\AddBrandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brands\AddBrandForm.Designer.cs">
+      <DependentUpon>AddBrandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddItemControl.Designer.cs">
+      <DependentUpon>AddItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrandControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BrandControl.Designer.cs">
+      <DependentUpon>BrandControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckControl.Designer.cs">
+      <DependentUpon>CheckControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ComboBoxEx.cs" />
+    <Compile Include="Controls\PurchaseCounterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PurchaseCounterControl.Designer.cs">
+      <DependentUpon>PurchaseCounterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CurrencyTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CurrencyTextbox.designer.cs">
+      <DependentUpon>CurrencyTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomerControl.Designer.cs">
+      <DependentUpon>CustomerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InventoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InventoryControl.Designer.cs">
+      <DependentUpon>InventoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InventoryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InventoryUserControl.Designer.cs">
+      <DependentUpon>InventoryUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumericTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericTextbox.Designer.cs">
+      <DependentUpon>NumericTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PurchasePaymentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PurchasePaymentControl.Designer.cs">
+      <DependentUpon>PurchasePaymentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PurchaseReturnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PurchaseReturnControl.Designer.cs">
+      <DependentUpon>PurchaseReturnControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SalesCounterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SalesCounterControl.Designer.cs">
+      <DependentUpon>SalesCounterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SalesPaymentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SalesPaymentControl.Designer.cs">
+      <DependentUpon>SalesPaymentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PurchaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PurchaseControl.Designer.cs">
+      <DependentUpon>PurchaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SalesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SalesControl.Designer.cs">
+      <DependentUpon>SalesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SalesReturnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SalesReturnControl.Designer.cs">
+      <DependentUpon>SalesReturnControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\AddCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\AddCustomerForm.Designer.cs">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailModel\IAutoPartDetailModel.cs" />
+    <Compile Include="DetailModel\PurchaseDetailModel.cs" />
+    <Compile Include="DetailModel\SalesDetailModel.cs" />
+    <Compile Include="Helper\CodeGenerator\ORCodeGenerator.cs" />
+    <Compile Include="Helper\CodeGenerator\PurchaseCounterCodeGenerator.cs" />
+    <Compile Include="Helper\CodeGenerator\PurchaseReturnCodeGenerator.cs" />
+    <Compile Include="Helper\CodeGenerator\SalesCounterCodeGenerator.cs" />
+    <Compile Include="Helper\CodeGenerator\SalesReturnCodeGenerator.cs" />
+    <Compile Include="Helper\CodeGenerator\VoucherPurchaseCodeGenerator.cs" />
+    <Compile Include="Helper\Export\Exporter.cs" />
+    <Compile Include="Helper\Export\IExportStrategy.cs" />
+    <Compile Include="Helper\Export\ORExportObject.cs" />
+    <Compile Include="Helper\Export\ORExportStrategy.cs" />
+    <Compile Include="Helper\Export\PurchaseCounterExportObject.cs" />
+    <Compile Include="Helper\Export\PurchaseCounterExportStrategy.cs" />
+    <Compile Include="Helper\Export\PurchaseReturnExportObject.cs" />
+    <Compile Include="Helper\Export\PurchaseReturnExportStrategy.cs" />
+    <Compile Include="Helper\Export\ReportExporter.cs" />
+    <Compile Include="Helper\Export\SalesCounterExportObject.cs" />
+    <Compile Include="Helper\Export\SalesCounterExportStrategy.cs" />
+    <Compile Include="Helper\Export\SalesReturnExportObject.cs" />
+    <Compile Include="Helper\Export\SalesReturnExportStrategy.cs" />
+    <Compile Include="Helper\Export\VoucherExportObject.cs" />
+    <Compile Include="Helper\Export\VoucherExportStrategy.cs" />
+    <Compile Include="Helper\HelperExtensions.cs" />
+    <Compile Include="Helper\CacheManager.cs" />
+    <Compile Include="Helper\CodeGenerator\CodeGenerator.cs" />
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="Helper\DuplicateChecker.cs" />
+    <Compile Include="Helper\ClientHelper.cs" />
+    <Compile Include="Helper\CodeGenerator\IGenerator.cs" />
+    <Compile Include="Helper\InputDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\IRefreshable.cs" />
+    <Compile Include="Helper\CodeGenerator\PayableCodeGenerator.cs" />
+    <Compile Include="Helper\CodeGenerator\ReceivableCodeGenerator.cs" />
+    <Compile Include="Install\InstallClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Install\InstallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install\InstallForm.Designer.cs">
+      <DependentUpon>InstallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\AddItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\AddItemForm.Designer.cs">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\AutoPartListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\AutoPartListForm.Designer.cs">
+      <DependentUpon>AutoPartListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\EditAutoPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\EditAutoPartForm.Designer.cs">
+      <DependentUpon>EditAutoPartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\RecentPurchasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\RecentPurchasesForm.Designer.cs">
+      <DependentUpon>RecentPurchasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\DuplicateItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\DuplicateItemForm.Designer.cs">
+      <DependentUpon>DuplicateItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\RecentSalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\RecentSalesForm.Designer.cs">
+      <DependentUpon>RecentSalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ReorderListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ReorderListForm.Designer.cs">
+      <DependentUpon>ReorderListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\SearchItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\SearchItemForm.Designer.cs">
+      <DependentUpon>SearchItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\UpdatePricesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\UpdatePricesForm.Designer.cs">
+      <DependentUpon>UpdatePricesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ViewInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ViewInventoryForm.Designer.cs">
+      <DependentUpon>ViewInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ViewItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ViewItemForm.Designer.cs">
+      <DependentUpon>ViewItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IOC.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification\NotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification\NotificationForm.Designer.cs">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddCheckForm.Designer.cs">
+      <DependentUpon>AddCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddCounterItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddCounterItemForm.Designer.cs">
+      <DependentUpon>AddCounterItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddInvoiceForm.Designer.cs">
+      <DependentUpon>AddInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddPurchasePaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddPurchasePaymentForm.Designer.cs">
+      <DependentUpon>AddPurchasePaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddSalesPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddSalesPaymentForm.Designer.cs">
+      <DependentUpon>AddSalesPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddPOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddPOForm.Designer.cs">
+      <DependentUpon>AddPOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddSalesCounterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddSalesCounterForm.Designer.cs">
+      <DependentUpon>AddSalesCounterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\AddPurchaseCounterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\AddPurchaseCounterForm.Designer.cs">
+      <DependentUpon>AddPurchaseCounterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\AddPurchaseReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\AddPurchaseReturnForm.Designer.cs">
+      <DependentUpon>AddPurchaseReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\AddSalesReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\AddSalesReturnForm.Designer.cs">
+      <DependentUpon>AddSalesReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\AddPurchaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\AddPurchaseForm.Designer.cs">
+      <DependentUpon>AddPurchaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\AddSalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\AddSalesForm.Designer.cs">
+      <DependentUpon>AddSalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\ViewPurchasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\ViewPurchasesForm.Designer.cs">
+      <DependentUpon>ViewPurchasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\ViewSalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\ViewSalesForm.Designer.cs">
+      <DependentUpon>ViewSalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewManagers\SalesCounterViewManager.cs" />
+    <EmbeddedResource Include="ActionLog\ActionLogForm.resx">
+      <DependentUpon>ActionLogForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approval\ApprovalForm.resx">
+      <DependentUpon>ApprovalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brands\AddBrandForm.resx">
+      <DependentUpon>AddBrandForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddItemControl.resx">
+      <DependentUpon>AddItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BrandControl.resx">
+      <DependentUpon>BrandControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CheckControl.resx">
+      <DependentUpon>CheckControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PurchaseCounterControl.resx">
+      <DependentUpon>PurchaseCounterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CurrencyTextbox.resx">
+      <DependentUpon>CurrencyTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomerControl.resx">
+      <DependentUpon>CustomerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InventoryControl.resx">
+      <DependentUpon>InventoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InventoryUserControl.resx">
+      <DependentUpon>InventoryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumericTextbox.resx">
+      <DependentUpon>NumericTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PurchasePaymentControl.resx">
+      <DependentUpon>PurchasePaymentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PurchaseReturnControl.resx">
+      <DependentUpon>PurchaseReturnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SalesCounterControl.resx">
+      <DependentUpon>SalesCounterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SalesPaymentControl.resx">
+      <DependentUpon>SalesPaymentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PurchaseControl.resx">
+      <DependentUpon>PurchaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SalesControl.resx">
+      <DependentUpon>SalesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SalesReturnControl.resx">
+      <DependentUpon>SalesReturnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install\InstallForm.resx">
+      <DependentUpon>InstallForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\AddItemForm.resx">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\AutoPartListForm.resx">
+      <DependentUpon>AutoPartListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\EditAutoPartForm.resx">
+      <DependentUpon>EditAutoPartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\RecentPurchasesForm.resx">
+      <DependentUpon>RecentPurchasesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\DuplicateItemForm.resx">
+      <DependentUpon>DuplicateItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\RecentSalesForm.resx">
+      <DependentUpon>RecentSalesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ReorderListForm.resx">
+      <DependentUpon>ReorderListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\SearchItemForm.resx">
+      <DependentUpon>SearchItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\UpdatePricesForm.resx">
+      <DependentUpon>UpdatePricesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ViewInventoryForm.resx">
+      <DependentUpon>ViewInventoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ViewItemForm.resx">
+      <DependentUpon>ViewItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification\NotificationForm.resx">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddCheckForm.resx">
+      <DependentUpon>AddCheckForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddCounterItemForm.resx">
+      <DependentUpon>AddCounterItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddInvoiceForm.resx">
+      <DependentUpon>AddInvoiceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddPurchasePaymentForm.resx">
+      <DependentUpon>AddPurchasePaymentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddSalesPaymentForm.resx">
+      <DependentUpon>AddSalesPaymentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddPOForm.resx">
+      <DependentUpon>AddPOForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddSalesCounterForm.resx">
+      <DependentUpon>AddSalesCounterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\AddPurchaseCounterForm.resx">
+      <DependentUpon>AddPurchaseCounterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report2.rdlc" />
+    <EmbeddedResource Include="Report\Report3.rdlc" />
+    <EmbeddedResource Include="Returns\AddPurchaseReturnForm.resx">
+      <DependentUpon>AddPurchaseReturnForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\AddSalesReturnForm.resx">
+      <DependentUpon>AddSalesReturnForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\AddPurchaseForm.resx">
+      <DependentUpon>AddPurchaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\AddSalesForm.resx">
+      <DependentUpon>AddSalesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\ViewPurchasesForm.resx">
+      <DependentUpon>ViewPurchasesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\ViewSalesForm.resx">
+      <DependentUpon>ViewSalesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.ActionDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.AutoPartDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.BrandDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.CheckColumnModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.CheckDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.CreditDetailModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.CustomerCreditDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.CustomerDebitDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.CustomerDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.DebitDetailModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.InventoryUserDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.PaymentCreditModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.PaymentDebitModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.PaymentDetailDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.PurchaseDetailViewModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.PurchaseDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.PurchaseReturnDetailModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.PurchaseReturnDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.SaleDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.SalesDetailViewModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.SalesReturnDetailModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.SalesReturnDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.SupplierDebitDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Controllers.SupplierDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.AutoPart.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.Brand.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.Check.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.Notification.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.PaymentCredit.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.Purchase.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.PurchasesView.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.Sale.datasource" />
+    <None Include="Properties\DataSources\TY.SISystem.Entities.SalesView.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.Entities.PaymentDetail.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.Entities.SalesPayment.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.PurchaseCounterItemModel.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.PurchasePaymentDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.PurchaseReturnDetailModel.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.SalesCounterDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.SalesCounterItemModel.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.SalesPaymentDisplayModel.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.SalesReturnDetailModel.datasource" />
+    <None Include="Properties\DataSources\TYEnterprises.SI.Client.DetailModel.IAutoPartDetailModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TYClient_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{3776E93F-DBC8-46F7-A269-056507B93B4D}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POCOs\POCOs.csproj">
+      <Project>{AE03E0A2-9F44-44D8-AB4A-F94CA85DED49}</Project>
+      <Name>POCOs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TYControllers\TYControllers.csproj">
+      <Project>{DA4A383D-4712-4FC7-8E5D-A08824AF9FF0}</Project>
+      <Name>TYControllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{AD5D785C-1699-458C-AE98-77D82C141519}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preppy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TY Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank Check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patternstripe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coinstack.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contract.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Barcode.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

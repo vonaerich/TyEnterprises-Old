@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA4A383D-4712-4FC7-8E5D-A08824AF9FF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TY.SPIMS.Controllers</RootNamespace>
+    <AssemblyName>TY.SPIMS.Controllers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionLogController.cs" />
+    <Compile Include="AutoPartController.cs" />
+    <Compile Include="BrandController.cs" />
+    <Compile Include="CheckController.cs" />
+    <Compile Include="CustomerController.cs" />
+    <Compile Include="Interfaces\ICheckController.cs" />
+    <Compile Include="Interfaces\ICustomerController.cs" />
+    <Compile Include="Interfaces\IInventoryUserController.cs" />
+    <Compile Include="Interfaces\IBrandController.cs" />
+    <Compile Include="Interfaces\IActionLogController.cs" />
+    <Compile Include="Interfaces\IAutoPartController.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="InventoryUserController.cs" />
+    <Compile Include="Interfaces\ISaleController.cs" />
+    <Compile Include="Interfaces\IPaymentDetailController.cs" />
+    <Compile Include="Interfaces\IPurchaseController.cs" />
+    <Compile Include="Interfaces\IPurchaseCounterController.cs" />
+    <Compile Include="Interfaces\IPurchaseReturnController.cs" />
+    <Compile Include="Interfaces\ISalesCounterController.cs" />
+    <Compile Include="Interfaces\ISalesReturnController.cs" />
+    <Compile Include="PaymentDetailController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseController.cs" />
+    <Compile Include="PurchaseCounterController.cs" />
+    <Compile Include="PurchaseReturnController.cs" />
+    <Compile Include="SaleController.cs" />
+    <Compile Include="SalesCounterController.cs" />
+    <Compile Include="SalesReturnController.cs" />
+    <Compile Include="UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{3776E93F-DBC8-46F7-A269-056507B93B4D}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POCOs\POCOs.csproj">
+      <Project>{AE03E0A2-9F44-44D8-AB4A-F94CA85DED49}</Project>
+      <Name>POCOs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{AD5D785C-1699-458C-AE98-77D82C141519}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
