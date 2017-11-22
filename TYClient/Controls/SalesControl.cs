@@ -255,10 +255,10 @@ namespace TY.SPIMS.Client.Controls
             CustomerDropdown.ComboBox.SelectedIndex = -1;
             CustomerDropdown.SelectedIndex = -1;
             InvoiceTextbox.Clear();
-            AmountTypeDropdown1.SelectedIndex = -1;
-            AmountTypeDropdown1.ComboBox.SelectedIndex = -1;
+            AmountTypeDropdown.SelectedIndex = -1;
+            AmountTypeDropdown.ComboBox.SelectedIndex = -1;
             AllDateRB.Checked = true;
-            AmountTextbox1.Text = "0.00";
+            AmountTextbox.Text = "0.00";
             DateToPicker.Value = DateTime.Now;
             DateFromPicker.Value = DateTime.Now;
             AllPaidRB.Checked = true;

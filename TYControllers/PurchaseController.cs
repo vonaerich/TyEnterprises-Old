@@ -275,9 +275,8 @@ namespace TY.SPIMS.Controllers
         {
             db.PurchasesView.MergeOption = MergeOption.OverwriteChanges;
 
-            var items = from i in db.PurchasesView
-                        where i.IsDeleted == false
-                        select i;
+            var items = db.PurchasesView
+                .Where(a => a.IsDeleted == false);
 
             if (filter != null)
             {

@@ -63,7 +63,7 @@ namespace TY.SPIMS.Client.Helper.Export
                     monthRange.Value2 = this._itemsToExport.Month;
 
                     //Cash
-                    Excel.Range cashRange = sheet.get_Range("F32,M32");
+                    Excel.Range cashRange = sheet.get_Range("E32,L32");
                     cashRange.Value2 = this._itemsToExport.Cash;
 
                     //Checks

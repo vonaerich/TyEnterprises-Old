@@ -106,9 +106,8 @@ namespace TY.SPIMS.Controllers
 
         private IQueryable<Brand> CreateQuery(string filter)
         {
-            var items = from i in db.Brand
-                        where i.IsDeleted == false
-                        select i;
+            var items = db.Brand
+                .Where(a => a.IsDeleted == false);
 
             if (!string.IsNullOrWhiteSpace(filter))
                 items = items.Where(a => a.BrandName.Contains(filter));

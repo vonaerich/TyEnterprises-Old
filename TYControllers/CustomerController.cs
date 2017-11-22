@@ -122,9 +122,8 @@ namespace TY.SPIMS.Controllers
 
         public IQueryable<Customer> CreateQuery(string filter)
         {
-            var items = from i in db.Customer
-                        where i.IsDeleted == false
-                        select i;
+            var items = db.Customer
+                .Where(a => a.IsDeleted == false);
 
             if (!string.IsNullOrWhiteSpace(filter))
                 items = items.Where(a => a.CompanyName.Contains(filter)
