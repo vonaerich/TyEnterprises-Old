@@ -273,9 +273,8 @@ namespace TY.SPIMS.Controllers
         {
             db.SalesView.MergeOption = MergeOption.OverwriteChanges;
 
-            var items = from i in db.SalesView
-                        where i.IsDeleted == false
-                        select i;
+            var items = db.SalesView
+                .Where(a => a.IsDeleted == false);
 
             if (filter != null)
             {
@@ -629,6 +628,18 @@ namespace TY.SPIMS.Controllers
                 }
 
                 return builder.ToString();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public IQueryable<SalesView> FetchSalesWithSearchGeneric(SaleFilterModel filter)
+        {
+            try
+            {
+                return this.CreateQuery(filter);
             }
             catch (Exception ex)
             {

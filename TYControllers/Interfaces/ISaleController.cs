@@ -3,6 +3,8 @@ using TY.SPIMS.Utilities;
 using TY.SPIMS.Entities;
 using System.Collections.Generic;
 using TY.SPIMS.POCOs;
+using System.Linq;
+
 namespace TY.SPIMS.Controllers.Interfaces
 {
     public interface ISaleController
@@ -23,5 +25,6 @@ namespace TY.SPIMS.Controllers.Interfaces
         void InsertSale(SaleColumnModel model);
         bool ItemHasPaymentOrReturn(int id);
         void UpdateSale(SaleColumnModel model);
+        IQueryable<SalesView> FetchSalesWithSearchGeneric(SaleFilterModel filter);
     }
 }

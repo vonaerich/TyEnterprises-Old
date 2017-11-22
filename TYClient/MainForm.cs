@@ -71,6 +71,7 @@ namespace TY.SPIMS.Client
                     viewActionLogToolStripMenuItem.Visible = false;
                     notificationsToolStripMenuItem.Visible = false;
                     backupDatabaseToolStripMenuItem.Visible = false;
+                    userManagementToolStripMenuItem.Visible = false;
                 }
             }
             else
@@ -81,8 +82,6 @@ namespace TY.SPIMS.Client
 
                 OpenInPanel(new InventoryControl());
             }
-            
-            
         }
 
         private void LoadUserDetails()
@@ -384,5 +383,9 @@ namespace TY.SPIMS.Client
             OpenForm(new AddPurchasePaymentForm(), FormWindowState.Normal);
         }
 
+        private void consolidatedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenInPanel(new ConsolidatedSalesControl());
+        }
     }
 }

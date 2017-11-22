@@ -261,7 +261,7 @@
             // 
             this.kryptonSplitContainer2.Panel2.Controls.Add(this.kryptonHeaderGroup2);
             this.kryptonSplitContainer2.Size = new System.Drawing.Size(938, 523);
-            this.kryptonSplitContainer2.SplitterDistance = 272;
+            this.kryptonSplitContainer2.SplitterDistance = 271;
             this.kryptonSplitContainer2.TabIndex = 4;
             // 
             // kryptonHeaderGroup4
@@ -277,7 +277,7 @@
             // kryptonHeaderGroup4.Panel
             // 
             this.kryptonHeaderGroup4.Panel.Controls.Add(this.dataGridView1);
-            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(938, 272);
+            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(938, 271);
             this.kryptonHeaderGroup4.TabIndex = 8;
             this.kryptonHeaderGroup4.ValuesPrimary.Heading = "Invoice List";
             this.kryptonHeaderGroup4.ValuesPrimary.Image = null;
@@ -327,7 +327,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(936, 215);
+            this.dataGridView1.Size = new System.Drawing.Size(936, 214);
             this.dataGridView1.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.dataGridView1.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.TabIndex = 4;
@@ -451,7 +451,7 @@
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.dataGridView2);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.panel2);
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonDataGridView1);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(938, 246);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(938, 247);
             this.kryptonHeaderGroup2.TabIndex = 9;
             this.kryptonHeaderGroup2.ValuesPrimary.Heading = "Invoice Details";
             this.kryptonHeaderGroup2.ValuesPrimary.Image = null;
@@ -497,7 +497,7 @@
             this.dataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView2.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(936, 160);
+            this.dataGridView2.Size = new System.Drawing.Size(936, 161);
             this.dataGridView2.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlClient;
             this.dataGridView2.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView2.TabIndex = 7;
@@ -827,7 +827,7 @@
             this.kryptonDataGridView1.ReadOnly = true;
             this.kryptonDataGridView1.RowHeadersVisible = false;
             this.kryptonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(936, 221);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(936, 222);
             this.kryptonDataGridView1.TabIndex = 4;
             // 
             // panel1

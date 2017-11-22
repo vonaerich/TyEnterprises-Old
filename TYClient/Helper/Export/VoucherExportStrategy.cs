@@ -21,7 +21,7 @@ namespace TY.SPIMS.Client.Helper.Export
 
         public void CreateNewPage(Excel.Worksheet sheet, int pages)
         {
-            Excel.Range source = sheet.get_Range("A1:I35");
+            Excel.Range source = sheet.get_Range("A1:M35");
             source.Copy(Type.Missing);
 
             for (int i = 1; i <= pages; i++)
@@ -47,23 +47,23 @@ namespace TY.SPIMS.Client.Helper.Export
                     Excel.Worksheet sheet = book.Worksheets[1];
             
                     //Code
-                    Excel.Range codeRange = sheet.get_Range("A1,F1");
+                    Excel.Range codeRange = sheet.get_Range("A1,H1");
                     codeRange.Value2 = this._itemsToExport.Code;
 
                     //Customer
-                    Excel.Range customerRange = sheet.get_Range("A2,F2");
+                    Excel.Range customerRange = sheet.get_Range("A2,H2");
                     customerRange.Value2 = string.Format("Supplier: {0}", this._itemsToExport.Supplier);
 
                     //Remarks
-                    Excel.Range remarksRange = sheet.get_Range("B32,G32");
+                    Excel.Range remarksRange = sheet.get_Range("B32,I32");
                     remarksRange.Value2 = this._itemsToExport.Remarks;
 
                     //Month
-                    Excel.Range monthRange = sheet.get_Range("D3,I3");
+                    Excel.Range monthRange = sheet.get_Range("E3,L3");
                     monthRange.Value2 = this._itemsToExport.Month;
 
                     //Cash
-                    Excel.Range cashRange = sheet.get_Range("D32,I32");
+                    Excel.Range cashRange = sheet.get_Range("F32,M32");
                     cashRange.Value2 = this._itemsToExport.Cash;
 
                     //Checks
@@ -72,7 +72,7 @@ namespace TY.SPIMS.Client.Helper.Export
                         int cell = 30;
                         foreach(var check in this._itemsToExport.Checks.Take(2))
                         {
-                            string rangeFormat = string.Format("A{0},F{0}", cell);
+                            string rangeFormat = string.Format("A{0},H{0}", cell);
                             Excel.Range checksRange = sheet.get_Range(rangeFormat);
                             checksRange.Value2 = string.Format("DETAILS: ({0} {1} {2} {3})",
                                 check.Bank, check.CheckNumber, check.ClearingDate.Date.ToShortDateString(),
@@ -107,15 +107,22 @@ namespace TY.SPIMS.Client.Helper.Export
                     foreach (var item in this._itemsToExport.Items)
                     {
                         string invoiceNumberFormat = j < 23 ?
-                            string.Format("A{0},F{0}", i) :
-                            string.Format("C{0},H{0}", i);
+                            string.Format("A{0},H{0}", i) :
+                            string.Format("D{0},K{0}", i);
                         Excel.Range invoiceCell = sheet.get_Range(invoiceNumberFormat);
                         invoiceCell.Value2 = item.PurchaseId != null ?
                             item.InvoiceNumber : string.Format("({0})", item.MemoNumber);
 
+                        string dateFormat = j < 23 ?
+                            string.Format("B{0},I{0}", i) :
+                            string.Format("E{0},L{0}", i);
+                        Excel.Range dateCell = sheet.get_Range(dateFormat);
+                        dateCell.Value2 = item.Date.HasValue ?
+                            item.Date.Value.ToShortDateString() : string.Empty;
+
                         string amountFormat = j < 23 ?
-                            string.Format("B{0},G{0}", i) :
-                            string.Format("D{0},I{0}", i);
+                            string.Format("C{0},J{0}", i) :
+                            string.Format("F{0},M{0}", i);
                         Excel.Range amountCell = sheet.get_Range(amountFormat);
                         amountCell.Value2 = item.PurchaseId != null ? 
                             item.Amount.GetValue() : item.Amount.GetValue() * -1;
@@ -140,19 +147,19 @@ namespace TY.SPIMS.Client.Helper.Export
 
                     if (this._itemsToExport.Discount > 0)
                     {
-                        Excel.Range discountRange = sheet.get_Range("C27, H27");
+                        Excel.Range discountRange = sheet.get_Range("E27, L27");
                         discountRange.Value2 = "less: discount";
 
-                        Excel.Range discountValRange = sheet.get_Range("D27, I27");
+                        Excel.Range discountValRange = sheet.get_Range("F27, M27");
                         discountValRange.Value2 = this._itemsToExport.Discount;
                     }
 
                     if (this._itemsToExport.WitholdingTax > 0)
                     {
-                        Excel.Range taxRange = sheet.get_Range("C28, H28");
+                        Excel.Range taxRange = sheet.get_Range("E28, L28");
                         taxRange.Value2 = "less: w/tax";
 
-                        Excel.Range taxValRange = sheet.get_Range("D28, I28");
+                        Excel.Range taxValRange = sheet.get_Range("F28, M28");
                         taxValRange.Value2 = this._itemsToExport.WitholdingTax;
                     }
                    
@@ -173,7 +180,7 @@ namespace TY.SPIMS.Client.Helper.Export
                 pageNumberRow += currentPage == 1 ? headerRows + itemShowCount + 6 :
                     headerRows + itemShowCount + 9;
 
-                string pageCountFormat = string.Format("A{0},F{0}", pageNumberRow);
+                string pageCountFormat = string.Format("A{0},H{0}", pageNumberRow);
                 Excel.Range pageCountCell = sheet.get_Range(pageCountFormat);
                 pageCountCell.Value2 = string.Format("Page {0} of {1}", currentPage, totalPages);
             }

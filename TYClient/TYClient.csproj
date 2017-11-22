@@ -156,6 +156,12 @@
       <DependentUpon>CheckControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ComboBoxEx.cs" />
+    <Compile Include="Controls\ConsolidatedSalesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ConsolidatedSalesControl.Designer.cs">
+      <DependentUpon>ConsolidatedSalesControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PurchaseCounterControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -491,6 +497,9 @@
     <EmbeddedResource Include="Controls\CheckControl.resx">
       <DependentUpon>CheckControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ConsolidatedSalesControl.resx">
+      <DependentUpon>ConsolidatedSalesControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\PurchaseCounterControl.resx">
       <DependentUpon>PurchaseCounterControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -708,6 +717,7 @@
     <None Include="Properties\DataSources\TY.SISystem.Entities.SalesView.datasource" />
     <None Include="Properties\DataSources\TY.SPIMS.Entities.PaymentDetail.datasource" />
     <None Include="Properties\DataSources\TY.SPIMS.Entities.SalesPayment.datasource" />
+    <None Include="Properties\DataSources\TY.SPIMS.POCOs.ConsolidatedSalesModel.datasource" />
     <None Include="Properties\DataSources\TY.SPIMS.POCOs.PurchaseCounterItemModel.datasource" />
     <None Include="Properties\DataSources\TY.SPIMS.POCOs.PurchasePaymentDisplayModel.datasource" />
     <None Include="Properties\DataSources\TY.SPIMS.POCOs.PurchaseReturnDetailModel.datasource" />

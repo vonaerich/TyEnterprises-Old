@@ -86,6 +86,8 @@ namespace TY.SPIMS.Client
             this.UserFullNameLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ExecutionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.consolidatedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             this.MainMenuStrip.SuspendLayout();
@@ -190,7 +192,9 @@ namespace TY.SPIMS.Client
             // 
             this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewSalesToolStripMenuItem,
-            this.addNewSaleToolStripMenuItem});
+            this.addNewSaleToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.consolidatedToolStripMenuItem});
             this.salesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
             this.salesToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
@@ -200,7 +204,7 @@ namespace TY.SPIMS.Client
             // 
             this.viewSalesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.viewSalesToolStripMenuItem.Name = "viewSalesToolStripMenuItem";
-            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(202, 24);
             this.viewSalesToolStripMenuItem.Text = "&View Sales";
             this.viewSalesToolStripMenuItem.Click += new System.EventHandler(this.viewSalesToolStripMenuItem_Click);
             // 
@@ -208,7 +212,7 @@ namespace TY.SPIMS.Client
             // 
             this.addNewSaleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.addNewSaleToolStripMenuItem.Name = "addNewSaleToolStripMenuItem";
-            this.addNewSaleToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.addNewSaleToolStripMenuItem.Size = new System.Drawing.Size(202, 24);
             this.addNewSaleToolStripMenuItem.Text = "&Add New Sale";
             this.addNewSaleToolStripMenuItem.Click += new System.EventHandler(this.addNewSaleToolStripMenuItem_Click);
             // 
@@ -286,7 +290,7 @@ namespace TY.SPIMS.Client
             // 
             this.createORToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.createORToolStripMenuItem.Name = "createORToolStripMenuItem";
-            this.createORToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.createORToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.createORToolStripMenuItem.Text = "C&reate OR";
             this.createORToolStripMenuItem.Click += new System.EventHandler(this.createORToolStripMenuItem_Click);
             // 
@@ -294,7 +298,7 @@ namespace TY.SPIMS.Client
             // 
             this.viewORsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.viewORsToolStripMenuItem.Name = "viewORsToolStripMenuItem";
-            this.viewORsToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.viewORsToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
             this.viewORsToolStripMenuItem.Text = "V&iew ORs";
             this.viewORsToolStripMenuItem.Click += new System.EventHandler(this.viewORsToolStripMenuItem_Click);
             // 
@@ -336,7 +340,7 @@ namespace TY.SPIMS.Client
             // 
             this.createVoucherToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.createVoucherToolStripMenuItem1.Name = "createVoucherToolStripMenuItem1";
-            this.createVoucherToolStripMenuItem1.Size = new System.Drawing.Size(177, 24);
+            this.createVoucherToolStripMenuItem1.Size = new System.Drawing.Size(179, 24);
             this.createVoucherToolStripMenuItem1.Text = "Create Voucher";
             this.createVoucherToolStripMenuItem1.Click += new System.EventHandler(this.createVoucherToolStripMenuItem1_Click);
             // 
@@ -344,7 +348,7 @@ namespace TY.SPIMS.Client
             // 
             this.viewVouchersToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.viewVouchersToolStripMenuItem.Name = "viewVouchersToolStripMenuItem";
-            this.viewVouchersToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.viewVouchersToolStripMenuItem.Size = new System.Drawing.Size(179, 24);
             this.viewVouchersToolStripMenuItem.Text = "View Vouchers";
             this.viewVouchersToolStripMenuItem.Click += new System.EventHandler(this.viewVouchersToolStripMenuItem_Click);
             // 
@@ -422,7 +426,7 @@ namespace TY.SPIMS.Client
             this.brandsManagementToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.brandsManagementToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.brandsManagementToolStripMenuItem.Name = "brandsManagementToolStripMenuItem";
-            this.brandsManagementToolStripMenuItem.Size = new System.Drawing.Size(300, 24);
+            this.brandsManagementToolStripMenuItem.Size = new System.Drawing.Size(302, 24);
             this.brandsManagementToolStripMenuItem.Text = "&Brands Management";
             this.brandsManagementToolStripMenuItem.Click += new System.EventHandler(this.brandsManagementToolStripMenuItem_Click);
             // 
@@ -430,7 +434,7 @@ namespace TY.SPIMS.Client
             // 
             this.customerManagementToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.customerManagementToolStripMenuItem.Name = "customerManagementToolStripMenuItem";
-            this.customerManagementToolStripMenuItem.Size = new System.Drawing.Size(300, 24);
+            this.customerManagementToolStripMenuItem.Size = new System.Drawing.Size(302, 24);
             this.customerManagementToolStripMenuItem.Text = "&Customer / Supplier Management";
             this.customerManagementToolStripMenuItem.Click += new System.EventHandler(this.customerManagementToolStripMenuItem_Click);
             // 
@@ -438,20 +442,20 @@ namespace TY.SPIMS.Client
             // 
             this.userManagementToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
-            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(300, 24);
+            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(302, 24);
             this.userManagementToolStripMenuItem.Text = "&User Management";
             this.userManagementToolStripMenuItem.Click += new System.EventHandler(this.userManagementToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(297, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(299, 6);
             // 
             // viewActionLogToolStripMenuItem
             // 
             this.viewActionLogToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.viewActionLogToolStripMenuItem.Name = "viewActionLogToolStripMenuItem";
-            this.viewActionLogToolStripMenuItem.Size = new System.Drawing.Size(300, 24);
+            this.viewActionLogToolStripMenuItem.Size = new System.Drawing.Size(302, 24);
             this.viewActionLogToolStripMenuItem.Text = "&View Action Log";
             this.viewActionLogToolStripMenuItem.Click += new System.EventHandler(this.viewActionLogToolStripMenuItem_Click);
             // 
@@ -459,20 +463,20 @@ namespace TY.SPIMS.Client
             // 
             this.notificationsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.notificationsToolStripMenuItem.Name = "notificationsToolStripMenuItem";
-            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(300, 24);
+            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(302, 24);
             this.notificationsToolStripMenuItem.Text = "&Notifications";
             this.notificationsToolStripMenuItem.Click += new System.EventHandler(this.notificationsToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(297, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(299, 6);
             // 
             // backupDatabaseToolStripMenuItem
             // 
             this.backupDatabaseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.backupDatabaseToolStripMenuItem.Name = "backupDatabaseToolStripMenuItem";
-            this.backupDatabaseToolStripMenuItem.Size = new System.Drawing.Size(300, 24);
+            this.backupDatabaseToolStripMenuItem.Size = new System.Drawing.Size(302, 24);
             this.backupDatabaseToolStripMenuItem.Text = "Backup &Database";
             this.backupDatabaseToolStripMenuItem.Click += new System.EventHandler(this.backupDatabaseToolStripMenuItem_Click);
             // 
@@ -542,7 +546,7 @@ namespace TY.SPIMS.Client
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.UserFullNameLabel,
             this.ExecutionLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 728);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 625);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1039, 22);
             this.statusStrip1.TabIndex = 3;
@@ -571,15 +575,28 @@ namespace TY.SPIMS.Client
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1039, 700);
+            this.panel1.Size = new System.Drawing.Size(1039, 597);
             this.panel1.TabIndex = 4;
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(199, 6);
+            // 
+            // consolidatedToolStripMenuItem
+            // 
+            this.consolidatedToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consolidatedToolStripMenuItem.Name = "consolidatedToolStripMenuItem";
+            this.consolidatedToolStripMenuItem.Size = new System.Drawing.Size(202, 24);
+            this.consolidatedToolStripMenuItem.Text = "C&onsolidated Sales";
+            this.consolidatedToolStripMenuItem.Click += new System.EventHandler(this.consolidatedToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1039, 750);
+            this.ClientSize = new System.Drawing.Size(1039, 647);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.kryptonPanel3);
@@ -663,6 +680,8 @@ namespace TY.SPIMS.Client
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripMenuItem createVoucherToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem viewVouchersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripMenuItem consolidatedToolStripMenuItem;
     }
 }
 

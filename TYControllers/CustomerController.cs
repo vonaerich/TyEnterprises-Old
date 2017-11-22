@@ -127,10 +127,10 @@ namespace TY.SPIMS.Controllers
                         select i;
 
             if (!string.IsNullOrWhiteSpace(filter))
-                items = items.Where(a => a.CompanyName.Contains(filter) 
+                items = items.Where(a => a.CompanyName.Contains(filter)
                     || a.CustomerCode.Contains(filter)
-                    || a.ContactPerson.Contains(filter) 
-                    || a.Address.Contains(filter) 
+                    || a.ContactPerson.Contains(filter)
+                    || a.Address.Contains(filter)
                     || a.CustomerCode.Contains(filter));
 
             return items;
@@ -174,23 +174,24 @@ namespace TY.SPIMS.Controllers
             {
                 var query = CreateQuery(string.Empty);
 
-                var result = from a in query
-                             orderby a.CompanyName
-                             select new CustomerDisplayModel
-                             {
-                                 Id = a.Id,
-                                 Address = a.Address,
-                                 Agent = a.Agent,
-                                 CompanyName = a.CompanyName,
-                                 ContactPerson = a.ContactPerson,
-                                 CustomerCode = a.CustomerCode,
-                                 FaxNumber = a.FaxNumber,
-                                 TIN = a.TIN,
-                                 PaymentTerms = a.PaymentTerms.Value,
-                                 PhoneNumber = a.PhoneNumber
-                             };
+                var result = query
+                    .OrderBy(a => a.CompanyName)
+                    .Select(a => new CustomerDisplayModel
+                        {
+                            Id = a.Id,
+                            Address = a.Address,
+                            Agent = a.Agent,
+                            CompanyName = a.CompanyName,
+                            ContactPerson = a.ContactPerson,
+                            CustomerCode = a.CustomerCode,
+                            FaxNumber = a.FaxNumber,
+                            TIN = a.TIN,
+                            PaymentTerms = a.PaymentTerms.Value,
+                            PhoneNumber = a.PhoneNumber
+                        })
+                    .ToList();
 
-                return result.ToList();
+                return result;
             }
             catch (Exception ex)
             {

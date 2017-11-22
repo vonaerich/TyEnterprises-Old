@@ -53,6 +53,7 @@
     <Compile Include="CheckColumnNames.cs" />
     <Compile Include="CheckDisplayModel.cs" />
     <Compile Include="CheckFilterModel.cs" />
+    <Compile Include="ConsolidatedSalesModel.cs" />
     <Compile Include="PurchaseCounterDisplayModel.cs" />
     <Compile Include="PurchaseCounterItemModel.cs" />
     <Compile Include="CreditDetailModel.cs" />
